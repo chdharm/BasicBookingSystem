@@ -1,28 +1,24 @@
 let utils = require('./Utils');
-
+const fs = require('fs');
+const cart=require("../model/Cart");
+const products=require("../model/Products");
+const users=require("../model/Users");
+const session=require("../model/UserSession");
 class Helpers {
     async signup (context) {
-        let repoName=context.name;
-        let payload = {
-            url: "https://api.github.com/search/repositories?q="+repoName+"+language:javascript&sort=stars+forks&order=desc",
-            method: 'get'
-        };
-        let resp = await utils.apiCall(payload).catch(e => {
-            console.log("Error in API call- searchRepoHelper function");
-        });
-        if (resp && resp.status == 200) {
-            return resp.data;
-        } else {
-            throw new Error("Error in API call- searchRepoHelper function");
-        }
+        
     }
     async login (context) {
+        // fs.readFile("", function(err, buf) {
+        //     console.log(buf);   
+        // });
+
 
     }
     async isValidLogIn (context) {
 
     }
-    async isAdmin (context) {
+    async isAdminLogin (context) {
 
     }
     async logout (context) {

@@ -30,9 +30,9 @@ class GETMYPARKINGAPIS{
             console.log("Response for isValidLogIn:",ctx.body);
         }
     }
-    async isAdmin(ctx){
+    async isAdminLogin(ctx){
         console.log("Request for isAdmin:",ctx.request);
-        let resp = await helpers.isAdmin({requestParam:ctx.request.body}).catch(e=>{
+        let resp = await helpers.isAdminLogin({requestParam:ctx.request.body}).catch(e=>{
             ctx.body = { status: 'false' , message:e.message}
         });
         if(resp){

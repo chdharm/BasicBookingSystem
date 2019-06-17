@@ -1,4 +1,4 @@
-var cart={
+var history={
     12345:[
         { 
             name:"Pen",
@@ -15,4 +15,4 @@ var cart={
         }
     ]
 }
-module.exports = new cart();
+module.exports = new history();

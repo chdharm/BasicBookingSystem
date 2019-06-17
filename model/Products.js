@@ -12,3 +12,4 @@ var products={
         price:10
     }
 }
+module.exports = new products();

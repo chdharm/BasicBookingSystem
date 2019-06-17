@@ -16,3 +16,4 @@ var users={
         isAdmin:false
     }
 }
+module.exports = new users();
