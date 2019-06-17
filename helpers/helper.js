@@ -4,6 +4,7 @@ const cart=require("../model/Cart");
 const products=require("../model/Products");
 const users=require("../model/Users");
 const session=require("../model/UserSession");
+const history=require("../model/History");
 class Helpers {
     async signup (context) {
         
